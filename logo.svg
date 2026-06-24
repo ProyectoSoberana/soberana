@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 500 350">
+  <defs>
+    <clipPath id="chip">
+      <rect x="165" y="110" width="170" height="170" rx="12"/>
+    </clipPath>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="500" height="500" fill="#0d1b2a"/>
+
+  <!-- ═══ TRAZAS IZQUIERDA ═══ -->
+  <!-- 1, 2, 5, 6 → celeste -->
+  <g stroke="#74ACDF" stroke-width="2" fill="none" opacity="0.85">
+    <line x1="80" y1="134" x2="156" y2="134"/>
+    <line x1="80" y1="159" x2="156" y2="159"/>
+    <line x1="80" y1="231" x2="156" y2="231"/>
+    <line x1="80" y1="256" x2="156" y2="256"/>
+  </g>
+  <!-- 3, 4 → blanco -->
+  <g stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.85">
+    <line x1="80" y1="183" x2="156" y2="183"/>
+    <line x1="80" y1="207" x2="156" y2="207"/>
+  </g>
+
+  <!-- ═══ TRAZAS DERECHA ═══ -->
+  <!-- 1, 2, 5, 6 → celeste -->
+  <g stroke="#74ACDF" stroke-width="2" fill="none" opacity="0.85">
+    <line x1="344" y1="134" x2="420" y2="134"/>
+    <line x1="344" y1="159" x2="420" y2="159"/>
+    <line x1="344" y1="231" x2="420" y2="231"/>
+    <line x1="344" y1="256" x2="420" y2="256"/>
+  </g>
+  <!-- 3, 4 → blanco -->
+  <g stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.85">
+    <line x1="344" y1="183" x2="420" y2="183"/>
+    <line x1="344" y1="207" x2="420" y2="207"/>
+  </g>
+
+  <!-- ═══ TRAZAS ARRIBA (6 pines) ═══ -->
+  <g stroke="#74ACDF" stroke-width="2" fill="none" opacity="0.85">
+    <line x1="189" y1="50" x2="189" y2="100"/>
+    <line x1="214" y1="50" x2="214" y2="100"/>
+    <line x1="238" y1="50" x2="238" y2="100"/>
+    <line x1="262" y1="50" x2="262" y2="100"/>
+    <line x1="286" y1="50" x2="286" y2="100"/>
+    <line x1="311" y1="50" x2="311" y2="100"/>
+  </g>
+
+  <!-- ═══ TRAZAS ABAJO (6 pines) ═══ -->
+  <g stroke="#74ACDF" stroke-width="2" fill="none" opacity="0.85">
+    <line x1="189" y1="290" x2="189" y2="360"/>
+    <line x1="214" y1="290" x2="214" y2="360"/>
+    <line x1="238" y1="290" x2="238" y2="360"/>
+    <line x1="262" y1="290" x2="262" y2="360"/>
+    <line x1="286" y1="290" x2="286" y2="360"/>
+    <line x1="311" y1="290" x2="311" y2="360"/>
+  </g>
+
+  <!-- ═══ VIAS IZQUIERDA ═══ -->
+  <!-- 1, 2, 5, 6 → celeste -->
+  <g fill="#0d1b2a" stroke="#74ACDF" stroke-width="1.5">
+    <circle cx="116" cy="134" r="4"/><circle cx="116" cy="159" r="4"/>
+    <circle cx="116" cy="231" r="4"/><circle cx="116" cy="256" r="4"/>
+  </g>
+  <!-- 3, 4 → blanco -->
+  <g fill="#0d1b2a" stroke="#FFFFFF" stroke-width="1.5">
+    <circle cx="116" cy="183" r="4"/><circle cx="116" cy="207" r="4"/>
+  </g>
+
+  <!-- ═══ VIAS DERECHA ═══ -->
+  <!-- 1, 2, 5, 6 → celeste -->
+  <g fill="#0d1b2a" stroke="#74ACDF" stroke-width="1.5">
+    <circle cx="384" cy="134" r="4"/><circle cx="384" cy="159" r="4"/>
+    <circle cx="384" cy="231" r="4"/><circle cx="384" cy="256" r="4"/>
+  </g>
+  <!-- 3, 4 → blanco -->
+  <g fill="#0d1b2a" stroke="#FFFFFF" stroke-width="1.5">
+    <circle cx="384" cy="183" r="4"/><circle cx="384" cy="207" r="4"/>
+  </g>
+
+  <!-- ═══ PADS IZQUIERDA ═══ -->
+  <g fill="#74ACDF" opacity="0.9">
+    <circle cx="80" cy="134" r="5"/><circle cx="80" cy="159" r="5"/>
+    <circle cx="80" cy="231" r="5"/><circle cx="80" cy="256" r="5"/>
+  </g>
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="80" cy="183" r="5"/><circle cx="80" cy="207" r="5"/>
+  </g>
+
+  <!-- ═══ PADS DERECHA ═══ -->
+  <g fill="#74ACDF" opacity="0.9">
+    <circle cx="420" cy="134" r="5"/><circle cx="420" cy="159" r="5"/>
+    <circle cx="420" cy="231" r="5"/><circle cx="420" cy="256" r="5"/>
+  </g>
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="420" cy="183" r="5"/><circle cx="420" cy="207" r="5"/>
+  </g>
+
+  <!-- ═══ PADS ARRIBA ═══ -->
+  <g fill="#74ACDF" opacity="0.9">
+    <circle cx="189" cy="50" r="5"/><circle cx="214" cy="50" r="5"/>
+    <circle cx="238" cy="50" r="5"/><circle cx="262" cy="50" r="5"/>
+    <circle cx="286" cy="50" r="5"/><circle cx="311" cy="50" r="5"/>
+  </g>
+
+  <!-- ═══ PADS ABAJO ═══ -->
+  <g fill="#74ACDF" opacity="0.9">
+    <circle cx="189" cy="360" r="5"/><circle cx="214" cy="360" r="5"/>
+    <circle cx="238" cy="360" r="5"/><circle cx="262" cy="360" r="5"/>
+    <circle cx="286" cy="360" r="5"/><circle cx="311" cy="360" r="5"/>
+  </g>
+
+  <!-- CHIP: cuerpo oscuro, borde celeste grueso -->
+  <rect x="165" y="110" width="170" height="170" rx="12" fill="#0d1b2a" clip-path="url(#chip)"/>
+  <rect x="165" y="110" width="170" height="170" rx="12" fill="none" stroke="#74ACDF" stroke-width="5" filter="url(#glow)"/>
+  <rect x="169" y="114" width="162" height="162" rx="9"  fill="none" stroke="#FFFFFF" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- ═══ PINES IZQUIERDA ═══ -->
+  <!-- 1, 2, 5, 6 → celeste -->
+  <g fill="#74ACDF">
+    <rect x="155" y="129" width="10" height="10" rx="2"/>
+    <rect x="155" y="154" width="10" height="10" rx="2"/>
+    <rect x="155" y="226" width="10" height="10" rx="2"/>
+    <rect x="155" y="251" width="10" height="10" rx="2"/>
+  </g>
+  <!-- 3, 4 → blanco -->
+  <g fill="#FFFFFF">
+    <rect x="155" y="178" width="10" height="10" rx="2"/>
+    <rect x="155" y="202" width="10" height="10" rx="2"/>
+  </g>
+
+  <!-- ═══ PINES DERECHA ═══ -->
+  <!-- 1, 2, 5, 6 → celeste -->
+  <g fill="#74ACDF">
+    <rect x="335" y="129" width="10" height="10" rx="2"/>
+    <rect x="335" y="154" width="10" height="10" rx="2"/>
+    <rect x="335" y="226" width="10" height="10" rx="2"/>
+    <rect x="335" y="251" width="10" height="10" rx="2"/>
+  </g>
+  <!-- 3, 4 → blanco -->
+  <g fill="#FFFFFF">
+    <rect x="335" y="178" width="10" height="10" rx="2"/>
+    <rect x="335" y="202" width="10" height="10" rx="2"/>
+  </g>
+
+  <!-- ═══ PINES ARRIBA ═══ -->
+  <g fill="#74ACDF">
+    <rect x="184" y="100" width="10" height="10" rx="2"/>
+    <rect x="209" y="100" width="10" height="10" rx="2"/>
+    <rect x="233" y="100" width="10" height="10" rx="2"/>
+    <rect x="257" y="100" width="10" height="10" rx="2"/>
+    <rect x="281" y="100" width="10" height="10" rx="2"/>
+    <rect x="306" y="100" width="10" height="10" rx="2"/>
+  </g>
+
+  <!-- ═══ PINES ABAJO ═══ -->
+  <g fill="#74ACDF">
+    <rect x="184" y="280" width="10" height="10" rx="2"/>
+    <rect x="209" y="280" width="10" height="10" rx="2"/>
+    <rect x="233" y="280" width="10" height="10" rx="2"/>
+    <rect x="257" y="280" width="10" height="10" rx="2"/>
+    <rect x="281" y="280" width="10" height="10" rx="2"/>
+    <rect x="306" y="280" width="10" height="10" rx="2"/>
+  </g>
+
+  <!-- Sol de Mayo pequeño — pin 1 -->
+  <g transform="translate(184,128)" filter="url(#glow)">
+    <g fill="#F6B40E">
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(0)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(22.5)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(45)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(67.5)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(90)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(112.5)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(135)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(157.5)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(180)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(202.5)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(225)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(247.5)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(270)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(292.5)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(315)"/>
+      <rect x="-1.2" y="-17" width="2.4" height="7" transform="rotate(337.5)"/>
+    </g>
+    <g fill="#F6B40E">
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(11.25)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(33.75)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(56.25)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(78.75)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(101.25)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(123.75)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(146.25)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(168.75)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(191.25)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(213.75)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(236.25)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(258.75)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(281.25)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(303.75)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(326.25)"/>
+      <path d="M 0,-10 C -2,-13 -1,-16 0,-17 C 1,-16 2,-13 0,-10 Z" transform="rotate(348.75)"/>
+    </g>
+    <circle r="9" fill="#F6B40E" stroke="#C8870A" stroke-width="1"/>
+  </g>
+
+</svg>
